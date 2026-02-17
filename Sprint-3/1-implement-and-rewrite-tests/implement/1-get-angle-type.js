@@ -42,3 +42,6 @@ function assertEquals(actualOutput, targetOutput) {
 const right = getAngleType(90);
 assertEquals(right, "Right angle");
 assertEquals(getAngleType(45), "Acute angle");
+
+const obtuse = getAngleType(120);
+assertEquals(obtuse, "Obtuse angle");
