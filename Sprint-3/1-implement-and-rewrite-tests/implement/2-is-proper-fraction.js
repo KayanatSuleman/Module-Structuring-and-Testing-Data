@@ -40,3 +40,12 @@ assertEquals(isProperFraction(2, 2), false);
 
 //Improper Fractions
 assertEquals(isProperFraction(5, 3), false);
+
+//Negative Numerator 
+assertEquals(isProperFraction(-1, 3), true);
+
+//Negative Denominator
+assertEquals(isProperFraction(1, -3), true);
+
+//Both Negative Numerator and Denominator
+assertEquals(isProperFraction(-2, -5), true);
