@@ -37,3 +37,6 @@ assertEquals(isProperFraction(2, 5), true);
 
 //Equal values (Not proper fractions)
 assertEquals(isProperFraction(2, 2), false);
+
+//Improper Fractions
+assertEquals(isProperFraction(5, 3), false);
