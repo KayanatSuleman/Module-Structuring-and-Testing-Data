@@ -34,6 +34,8 @@ function getAngleType(angle) {
   if (angle === 180) {
     return "Straight angle";
   }
+
+  return "Reflex angle";
 }
 
 // The line below allows us to load the getAngleType function into tests in other files.
