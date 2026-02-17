@@ -18,6 +18,10 @@ function getAngleType(angle) {
   if (angle == 90) {
     return "Right angle";
   }
+
+  if (angle > 0 && angle < 90) {
+    return "Acute angle";
+  }
 }
 
 // The line below allows us to load the getAngleType function into tests in other files.
@@ -37,3 +41,4 @@ function assertEquals(actualOutput, targetOutput) {
 // Example: Identify Right Angles
 const right = getAngleType(90);
 assertEquals(right, "Right angle");
+assertEquals(getAngleType(45), "Acute angle");
