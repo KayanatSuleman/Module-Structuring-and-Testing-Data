@@ -31,4 +31,6 @@ function assertEquals(actualOutput, targetOutput) {
 // What combinations of numerators and denominators should you test?
 
 // Example: 1/2 is a proper fraction
+//Proper Fractions
 assertEquals(isProperFraction(1, 2), true);
+assertEquals(isProperFraction(2, 5), true);
