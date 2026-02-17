@@ -34,3 +34,6 @@ function assertEquals(actualOutput, targetOutput) {
 //Proper Fractions
 assertEquals(isProperFraction(1, 2), true);
 assertEquals(isProperFraction(2, 5), true);
+
+//Equal values (Not proper fractions)
+assertEquals(isProperFraction(2, 2), false);
