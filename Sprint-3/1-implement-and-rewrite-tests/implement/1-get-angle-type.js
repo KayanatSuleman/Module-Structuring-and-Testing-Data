@@ -15,7 +15,9 @@
 // execute the code to ensure all tests pass.
 
 function getAngleType(angle) {
-  // TODO: Implement this function
+  if (angle == 90) {
+    return "Right angle";
+  }
 }
 
 // The line below allows us to load the getAngleType function into tests in other files.
