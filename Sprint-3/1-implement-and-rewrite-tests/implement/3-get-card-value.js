@@ -62,6 +62,18 @@ function assertEquals(actualOutput, targetOutput) {
 // Examples:
 assertEquals(getCardValue("9♠"), 9);
 
+//Ace
+assertEquals(getCardValue("A♠"), 11);
+
+//Face cards
+assertEquals(getCardValue("J♥"), 10);
+assertEquals(getCardValue("Q♦"), 10);
+assertEquals(getCardValue("K♣"), 10);
+
+// Numeric Cards 
+assertEquals(getCardValue("2♠"), 2);
+assertEquals(getCardValue("10♦"), 10);
+
 // Handling invalid cards
 try {
   getCardValue("invalid");
