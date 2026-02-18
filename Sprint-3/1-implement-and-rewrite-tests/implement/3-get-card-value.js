@@ -62,10 +62,10 @@ function assertEquals(actualOutput, targetOutput) {
 // Examples:
 assertEquals(getCardValue("9♠"), 9);
 
-//Ace
+// Ace
 assertEquals(getCardValue("A♠"), 11);
 
-//Face cards
+// Face cards
 assertEquals(getCardValue("J♥"), 10);
 assertEquals(getCardValue("Q♦"), 10);
 assertEquals(getCardValue("K♣"), 10);
@@ -80,6 +80,20 @@ try {
 
   // This line will not be reached if an error is thrown as expected
   console.error("Error was not thrown for invalid card");
-} catch (e) {}
+} catch (e) {
+  console.log("Correctly threw error for invalid card");
+}
 
 // What other invalid card cases can you think of?
+
+// Invliad suit
+try { getCardValue("A?"); console.error("No error thrown"); } catch(e) {}
+
+// Invalid rank
+try { getCardValue("1♠"); console.error("No error thrown"); } catch(e) {}
+
+// Missing suit
+try { getCardValue("A"); console.error("No error thrown"); } catch(e) {}
+
+// Extra characters
+try { getCardValue("AAA♠"); console.error("No error thrown"); } catch(e) {}
