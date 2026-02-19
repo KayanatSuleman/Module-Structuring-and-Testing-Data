@@ -14,6 +14,10 @@ test(`should return "Acute angle" when (0 < angle < 90)`, () => {
 });
 
 // Case 2: Right angle
+test('should return "Right angle" when angle is 90', () => {
+  expect(getAngleType(90)).toEqual("Right angle");
+});
+
 // Case 3: Obtuse angles
 // Case 4: Straight angle
 // Case 5: Reflex angles
