@@ -24,3 +24,23 @@ test("should return true for proper fractions", () => {
 test("should return false when numerator equals denominator", () => {
   expect(isProperFraction(2,2)).toEqual(false);
 })
+
+//Improper fractions
+test("should return false for improper fractions", () => {
+  expect(isProperFraction(5,3)).toEqual(false);
+})
+
+//Negative numerator
+test("should return true when numerator is negative but absolute value is smaller", () => {
+  expect(isProperFraction(-1, 3)).toEqual(true);
+})
+
+//Negative denominator
+test("should return true when denominator is negative but absolute value is larger", () => {
+  expect(isProperFraction(1, -3)).toEqual(true);
+})
+
+//Both Negative
+test("should return true when both numerator and denominator are negative and proper", () => {
+  expect(isProperFraction(-2, -5)).toEqual(true);
+})
